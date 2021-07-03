@@ -43,7 +43,7 @@ int backtracking(int rainhas, vector<int> &solucao_parcial, int coluna_escolhida
     } else if(coluna_escolhida == rainha_fixa) {
         backtracking(rainhas, solucao_parcial, coluna_escolhida+1, fim+1);
     } else {
-        int c = encontrarCandidatos(rainhas, solucao_parcial, 4);
+        int c = encontrarCandidatos(rainhas, solucao_parcial, 0);
         solucao_parcial.push_back(c);
         backtracking(rainhas, solucao_parcial, coluna_escolhida+1, fim+1);
     }
