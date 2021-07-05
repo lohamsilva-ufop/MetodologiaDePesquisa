@@ -39,24 +39,14 @@ double datas = 0;
 }
 
 
-void interval(const std::vector<double>& data, int minimum, int maximum){
-    double sub = maximum - minimum;
-    double intervalo = sub / 5;
-    cout << "Intervalo: " << intervalo;
-
-    /* while (valor < maximum){
-        valor = valor + intervalo;
-        cout << valor << endl;
-
-        for(int i=0; i<data.size(); i++){
-                vector <double> it;
-
-
-            if(data[i] < valor){
-                contador = contador + 1;
-                it.push_back()
-            }
-        }*/
+void interval(std::vector<double>& data){
+    int minimum;
+    int maximum;
+    int quantidade = data.size();
+    ordena(data);
+    minimum = data[0];
+    maximum = data[quantidade-1];
+    cout << "O valor minimo e maximo do intervalo sao respectivamente: " << minimum << " e " << maximum;
 }
 
 double variance(const std::vector<double>& data){
@@ -80,7 +70,7 @@ int main(){
     std::vector <double> data {148,170,155,131};
     int tamanho = data.size();
 
-    interval(data, 131, 170);
+    interval(data);
     cout << endl;
     cout << "Media dos dados e: " << mean(data) << endl;
     cout << "A variancia dos dados e: " << variance(data) << endl;

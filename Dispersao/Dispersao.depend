@@ -1,5 +1,6 @@
 # depslib dependency file v1.0
-1625067435 source:c:\users\loham\documents\github\metodologiadepesquisa\dispersao\main.cpp
+1625493825 source:c:\users\loham\documents\github\metodologiadepesquisa\dispersao\main.cpp
 	<iostream>
 	<vector>
+	<math.h>
 
