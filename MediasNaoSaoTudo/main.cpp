@@ -5,8 +5,8 @@
 
 /*
 Nome: Loham Santos da Silva
-Disciplina: Metodologia de Pesquisa em computação - PCC103
-Tópico: "O Significado de média"
+Disciplina: Metodologia de Pesquisa em computaÃ§Ã£o - PCC103
+TÃ³pico: "MÃ©dias nÃ£o sÃ£o tudo"
 */
 
 using namespace std;
@@ -20,7 +20,7 @@ int tamanho = data.size();
     }
 }
 
-//procedimento que ordena o vetor passado por referência.
+//procedimento que ordena o vetor passado por referÃªncia.
 void ordena(std::vector<double>& data){
 int temp;
 int tamanho = data.size();
@@ -36,7 +36,7 @@ int tamanho = data.size();
     }
 }
 
-//função que mostra a media
+//funÃ§Ã£o que mostra a media
 double mean(const std::vector<double>& data){
 double datas = 0;
 
@@ -118,19 +118,11 @@ int main(){
     cout << "Digite o ponto X: ";
     cin >> x;
 
-
     std::cout << "A media dos dados e: " << mean(data) << std::endl;
     std::cout << "Desvio padrao: " << desvio_padrao << std::endl;
 
-
-
     std::cout << "Distribuicao normal 1: " << normal_distribution_pdf(x, media, desvio_padrao) << std::endl;
     std::cout << "Distribuicao normal 2: " << normal_distribution_pdf(x) << std::endl;
-
-
-
-
-
 
     std::cout << std::endl;
     std::cout << "Vetor ordenado: ";
